@@ -1,0 +1,16 @@
+version: '3'
+services:
+  web:
+    build: .
+    working_dir: /app
+    restart: always
+    command: ./init.sh
+    environment:
+      - DEBUG=index,gulp,html,http
+      - NODE_ENV=development
+    volumes:
+     - .:/app:rw
+    ports:
+      - '3002:3002'
+      - '3001:3001'
+      - '3000:8080'
