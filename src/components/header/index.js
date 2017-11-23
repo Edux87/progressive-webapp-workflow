@@ -80,10 +80,6 @@ export default class Header extends Component {
 								<List.ItemIcon>account_circle</List.ItemIcon>
 								Profile
 							</List.LinkItem>
-							<List.LinkItem onClick={this.goToPlay}>
-								<List.ItemIcon>face</List.ItemIcon>
-								Play
-							</List.LinkItem>
 						</List>
 					</Drawer.TemporaryDrawerContent>
 				</Drawer.TemporaryDrawer>

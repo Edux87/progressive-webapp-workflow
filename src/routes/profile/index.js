@@ -33,10 +33,10 @@ export default class Profile extends Component {
 	// Note: `user` comes from the URL, courtesy of our router
 	render({ user }, { time, count }) {
 		return (
-      <div class={style.profile}>
-        <h1>Profile: {user}</h1>
-        <Card>
-          <Card.Primary>
+			<div class={style.profile}>
+				<h1>Profile: {user}</h1>
+				<Card>
+					<Card.Primary>
     				<p>This is the user profile for a user named { user }.</p>
     				<div>Current time: {new Date(time).toLocaleString()}</div>
     				<p>
@@ -44,9 +44,9 @@ export default class Profile extends Component {
     					{' '}
     					Clicked {count} times.
     				</p>
-          </Card.Primary>
-        </Card>
-      </div>
+					</Card.Primary>
+				</Card>
+			</div>
 		);
 	}
 }
